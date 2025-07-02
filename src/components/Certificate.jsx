@@ -183,7 +183,7 @@ const Certificate = () => {
   style={{
     position: "absolute",
     bottom: "227px",       // slightly moved up
-    left: "422px",
+    left: "410px",
     width: "80px",
     height: "26px",        // increased height
     lineHeight: "26px",    // match height
