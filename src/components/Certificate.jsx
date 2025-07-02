@@ -65,7 +65,7 @@ const Certificate = () => {
         style={{
           width: "1123px",
           height: "794px",
-          backgroundImage: 'url("/AAAML.png")',
+          backgroundImage: 'url("/AAML.png")',
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
