@@ -23,7 +23,7 @@ const Certificate = () => {
         .replace(/[\\/:*?"<>|]/g, "")}.pdf`,
       image: { type: "jpeg", quality: 1 },
       html2canvas: {
-        scale: 3,
+        scale: 2,
         useCORS: true,
         allowTaint: true,
         logging: false,
@@ -33,6 +33,7 @@ const Certificate = () => {
         format: "a4",
         orientation: "landscape",
       },
+      pagebreak: { mode: ["avoid-all"] },
     };
     html2pdf().set(opt).from(element).save();
   };
@@ -69,6 +70,7 @@ const Certificate = () => {
           height: "794px",
           backgroundImage: 'url("/AAML.png")',
           backgroundSize: "cover",
+          overflow:'hidden',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           position: "relative",
