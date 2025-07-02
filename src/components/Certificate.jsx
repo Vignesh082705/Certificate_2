@@ -18,7 +18,9 @@ const Certificate = () => {
     const element = certRef.current;
     const opt = {
       margin: 0,
-      filename: `${form.certNo || "certificate"}.pdf`,
+      filename: `AACT1${form.certNo}_${(form.name || "certificate")
+        .toUpperCase()
+        .replace(/[\\/:*?"<>|]/g, "")}.pdf`,
       image: { type: "jpeg", quality: 1 },
       html2canvas: {
         scale: 3,
